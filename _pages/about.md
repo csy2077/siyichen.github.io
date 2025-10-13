@@ -17,7 +17,9 @@ About Me
 
 News
 ======
-1. **[Jun 2025]** Our [paper](https://arxiv.org/abs/2501.16642) on flow matching for data assimilation is updated.
+1. **[Oct 2025]** Our [paper](https://arxiv.org/abs/2407.01027) get accepted for IEEE Transactions on Image Processing: Blind Inversion using Latent Diffusion Priors.
+2. **[Sep 2025]** Our [paper](https://arxiv.org/abs/2501.16642) get accepted for NeurIPS 2025: FlowDAS: A Stochastic Interpolant-based Framework for Data Assimilation.
+3. **[Jun 2025]** Our [paper](https://arxiv.org/abs/2501.16642) on flow matching for data assimilation is updated.
 
 Publications
 ======
