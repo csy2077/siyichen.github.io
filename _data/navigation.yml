@@ -23,6 +23,9 @@ main:
   # - title: "Blog Posts"
   #   url: /year-archive/
     
+  - title: "Animation"
+    url: /animation-comparison/
+
   - title: "CV"
     url: /cv/
     
