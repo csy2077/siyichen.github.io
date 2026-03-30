@@ -8,7 +8,7 @@ layout: single
 <style>
 .video-grid {
   display: grid;
-  grid-template-columns: repeat(2, 1fr);
+  grid-template-columns: 1fr;
   gap: 10px;
   margin-bottom: 10px;
 }
@@ -44,7 +44,7 @@ layout: single
 }
 .header-row {
   display: grid;
-  grid-template-columns: repeat(2, 1fr);
+  grid-template-columns: 1fr;
   gap: 10px;
   margin-bottom: 15px;
 }
@@ -72,20 +72,20 @@ layout: single
 <div class="prompt-section">
   <h3>Prompt {{ forloop.index }}: {{ prompts[i] }}</h3>
   <div class="video-grid">
-    <div>
+    <!-- <div>
       <div class="label">Wan Teacher</div>
       <div class="placeholder">Coming Soon</div>
-    </div>
+    </div> -->
     <div>
       <div class="label">Ours</div>
       <video autoplay loop muted playsinline controls>
         <source src="{{ site.baseurl }}/assets/videos/animation_comparison_v2/ours_{{ indices[i] }}.mp4" type="video/mp4">
       </video>
     </div>
-    <div>
+    <!-- <div>
       <div class="label">DPDMD</div>
       <div class="placeholder">Coming Soon</div>
-    </div>
+    </div> -->
     <div>
       <div class="label">DMD2</div>
       <video autoplay loop muted playsinline controls>
