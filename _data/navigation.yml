@@ -26,6 +26,9 @@ main:
   - title: "Animation"
     url: /animation-comparison/
 
+  - title: "Animation V2"
+    url: /animation-comparison-v2/
+
   - title: "CV"
     url: /cv/
     
