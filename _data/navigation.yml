@@ -23,23 +23,8 @@ main:
   # - title: "Blog Posts"
   #   url: /year-archive/
     
-  - title: "Animation"
-    url: /animation-comparison/
-
-  - title: "Animation V2"
-    url: /animation-comparison-v2/
-
-  - title: "Animation V3"
-    url: /animation-comparison-v3/
-
-  - title: "Animation V4"
-    url: /animation-comparison-v4/
-
-  - title: "Animation V5"
-    url: /animation-comparison-v5/
-
-  - title: "Animation V6"
-    url: /animation-comparison-v6/
+  - title: "REPA Loss"
+    url: /repa-loss/
 
   - title: "CV"
     url: /cv/
