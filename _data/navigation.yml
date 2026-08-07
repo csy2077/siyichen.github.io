@@ -26,6 +26,9 @@ main:
   - title: "REPA Loss"
     url: /repa-loss/
 
+  - title: "DMD2 vs V-JEPA"
+    url: /dmd2-vs-vjepa/
+
   - title: "CV"
     url: /cv/
     

@@ -1,0 +1,83 @@
+---
+title: "DMD2 vs V-JEPA"
+permalink: /dmd2-vs-vjepa/
+author_profile: false
+layout: single
+classes: wide
+indices: [1, 3, 4, 12, 13, 17, 18, 19, 80, 102, 103, 136, 147, 208, 223, 266]
+---
+
+<style>
+#main {
+  max-width: 100% !important;
+}
+.page {
+  max-width: 100% !important;
+  padding: 0 20px;
+}
+.page__inner-wrap {
+  max-width: 100% !important;
+}
+.initial-content, .page-content {
+  max-width: 100% !important;
+}
+article.page {
+  width: 100% !important;
+  max-width: 100% !important;
+}
+.compare-row {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 30px;
+  align-items: start;
+}
+.method-block {
+  min-width: 0;
+}
+.method-title {
+  text-align: center;
+  font-weight: bold;
+  font-size: 1.0em;
+  margin-bottom: 8px;
+  padding: 4px 0;
+  background: #f2f2f2;
+  border-radius: 4px;
+}
+.method-block video {
+  width: 100%;
+  display: block;
+  border-radius: 4px;
+  background: #000;
+}
+.prompt-section {
+  margin-bottom: 55px;
+}
+@media (max-width: 768px) {
+  .compare-row {
+    grid-template-columns: 1fr;
+    gap: 20px;
+  }
+}
+</style>
+
+<p>Side-by-side comparison of a <strong>DMD2</strong> 4-step student (left) and a <strong>V-JEPA</strong> 4-step student (right). For each example, the left video is DMD2 and the right video is V-JEPA.</p>
+
+{% for idx in page.indices %}
+<div class="prompt-section">
+  <h3>Example {{ forloop.index }} <span style="color:#888;font-weight:normal;">(#{{ idx }})</span></h3>
+  <div class="compare-row">
+    <div class="method-block">
+      <div class="method-title">DMD2</div>
+      <video autoplay loop muted playsinline controls>
+        <source src="{{ site.baseurl }}/assets/videos/dmd2_vs_vjepa/dmd2_{{ idx }}.mp4" type="video/mp4">
+      </video>
+    </div>
+    <div class="method-block">
+      <div class="method-title">V-JEPA</div>
+      <video autoplay loop muted playsinline controls>
+        <source src="{{ site.baseurl }}/assets/videos/dmd2_vs_vjepa/vjepa_{{ idx }}.mp4" type="video/mp4">
+      </video>
+    </div>
+  </div>
+</div>
+{% endfor %}
