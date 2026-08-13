@@ -155,51 +155,45 @@ WISA physics test set. Prompts for every clip below are collected in
 <div class="triple-row">
   <div class="method-block">
     <div class="method-title">DMD2</div>
-    <video loop muted playsinline controls preload="none" class="lazy-video"
-           data-src="{{ site.baseurl }}/assets/videos/physics_categories/dmd2_{{ idx }}.mp4"></video>
+    <video loop muted playsinline controls preload="none" class="lazy-video">
+      <source src="{{ site.baseurl }}/assets/videos/physics_categories/dmd2_{{ idx }}.mp4" type="video/mp4">
+    </video>
   </div>
   <div class="method-block">
     <div class="method-title">3600</div>
-    <video loop muted playsinline controls preload="none" class="lazy-video"
-           data-src="{{ site.baseurl }}/assets/videos/physics_categories/3600_{{ idx }}.mp4"></video>
+    <video loop muted playsinline controls preload="none" class="lazy-video">
+      <source src="{{ site.baseurl }}/assets/videos/physics_categories/3600_{{ idx }}.mp4" type="video/mp4">
+    </video>
   </div>
   <div class="method-block">
     <div class="method-title gt-title">Ground truth</div>
-    <video loop muted playsinline controls preload="none" class="lazy-video"
-           data-src="{{ site.baseurl }}/assets/videos/physics_categories/gt_{{ idx }}.mp4"></video>
+    <video loop muted playsinline controls preload="none" class="lazy-video">
+      <source src="{{ site.baseurl }}/assets/videos/physics_categories/gt_{{ idx }}.mp4" type="video/mp4">
+    </video>
   </div>
 </div>
 {% endfor %}
 {% endfor %}
 
 <script>
-// 192 videos on one page: only fetch and play what is actually on screen,
-// otherwise the browser tries to download every clip at once.
+// Progressive enhancement ONLY: every video above already has a real <source>
+// and preload="none", so the controls work with JavaScript disabled and the
+// browser fetches nothing until play. This just auto-plays clips while they
+// are on screen and pauses them when they scroll away, so 192 videos are
+// never decoding at once.
 (function () {
-  var vids = document.querySelectorAll('video.lazy-video');
-  function load(v) {
-    if (v.dataset.src && !v.querySelector('source')) {
-      var s = document.createElement('source');
-      s.src = v.dataset.src;
-      s.type = 'video/mp4';
-      v.appendChild(s);
-      v.load();
-    }
-  }
-  if (!('IntersectionObserver' in window)) {
-    vids.forEach(load);
-    return;
-  }
+  if (!('IntersectionObserver' in window)) return;
   var io = new IntersectionObserver(function (entries) {
     entries.forEach(function (e) {
       if (e.isIntersecting) {
-        load(e.target);
         e.target.play().catch(function () {});
-      } else {
+      } else if (!e.target.paused) {
         e.target.pause();
       }
     });
-  }, { rootMargin: '300px 0px' });
-  vids.forEach(function (v) { io.observe(v); });
+  }, { rootMargin: '200px 0px' });
+  document.querySelectorAll('video.lazy-video').forEach(function (v) {
+    io.observe(v);
+  });
 })();
 </script>
