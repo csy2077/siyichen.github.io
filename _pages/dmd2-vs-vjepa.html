@@ -146,7 +146,10 @@ article.page {
 for the same prompt. Each row is one prompt: <strong>DMD2</strong>, <strong>3600</strong>,
 then the <strong>ground truth</strong>. The number in brackets is the prompt index in the
 WISA physics test set. Prompts for every clip below are collected in
-<a href="{{ site.baseurl }}/files/physics_category_prompts.txt">physics_category_prompts.txt</a>.</p>
+<a href="{{ site.baseurl }}/files/physics_category_prompts.txt">physics_category_prompts.txt</a>
+(grouped by category, with indices) and
+<a href="{{ site.baseurl }}/files/physics_category_prompts_plain.txt">physics_category_prompts_plain.txt</a>
+(plain, one prompt per line, in the order shown below).</p>
 
 {% for cat in page.physics_categories %}
 <h3 class="cat-heading">{{ cat.name }}</h3>
