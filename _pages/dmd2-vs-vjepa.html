@@ -83,6 +83,15 @@ article.page {
 .triple-row .method-title {
   font-size: 0.95em;
 }
+/* lazy videos carry no source until scrolled into view, so they have no
+   intrinsic size -- reserve the real 832x480 box or the page collapses to
+   grey placeholders and looks empty */
+.triple-row video {
+  aspect-ratio: 832 / 480;
+  width: 100%;
+  height: auto;
+  background: #000;
+}
 .triple-row .gt-title {
   background: #e3efe3;
 }
