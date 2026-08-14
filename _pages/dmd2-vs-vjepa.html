@@ -73,15 +73,16 @@ article.page {
     gap: 20px;
   }
 }
-/* --- physics-category section: three sources per row --- */
+/* --- physics-category section: five sources per row --- */
 .triple-row {
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  gap: 20px;
+  grid-template-columns: repeat(5, 1fr);
+  gap: 12px;
   align-items: start;
 }
 .triple-row .method-title {
-  font-size: 0.95em;
+  font-size: 0.8em;
+  padding: 3px 0;
 }
 /* lazy videos carry no source until scrolled into view, so they have no
    intrinsic size -- reserve the real 832x480 box or the page collapses to
@@ -108,7 +109,13 @@ article.page {
   color: #888;
   font-weight: normal;
 }
-@media (max-width: 768px) {
+@media (max-width: 1100px) {
+  .triple-row {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 14px;
+  }
+}
+@media (max-width: 620px) {
   .triple-row {
     grid-template-columns: 1fr;
     gap: 14px;
@@ -140,12 +147,13 @@ article.page {
 
 <hr style="margin:60px 0 40px;">
 
-<h2>By physics category: DMD2 vs 3600 vs ground truth</h2>
+<h2>By physics category: teacher, teacher SFT, DMD2, 3600, ground truth</h2>
 
-<p>The same two 4-step students, now shown against the <strong>real held-out clip</strong>
-for the same prompt. Each row is one prompt: <strong>DMD2</strong>, <strong>3600</strong>,
-then the <strong>ground truth</strong>. The number in brackets is the prompt index in the
-WISA physics test set. Prompts for every clip below are collected in
+<p>Five sources for the same prompt, left to right: the <strong>teacher</strong>
+(50-step, CFG 5.0), the <strong>teacher after SFT</strong> (step 14000), the two 4-step
+students <strong>DMD2</strong> and <strong>3600</strong>, and the <strong>real held-out
+clip</strong>. The number in brackets is the prompt index in the WISA physics test set.
+Prompts for every clip below are collected in
 <a href="{{ site.baseurl }}/files/physics_category_prompts.txt">physics_category_prompts.txt</a>
 (grouped by category, with indices) and
 <a href="{{ site.baseurl }}/files/physics_category_prompts_plain.txt">physics_category_prompts_plain.txt</a>
@@ -156,6 +164,18 @@ WISA physics test set. Prompts for every clip below are collected in
 {% for idx in cat.indices %}
 <div class="example-label">{{ cat.name }} {{ forloop.index }} <span>[#{{ idx }}]</span></div>
 <div class="triple-row">
+  <div class="method-block">
+    <div class="method-title">Teacher</div>
+    <video loop muted playsinline controls preload="none" class="lazy-video">
+      <source src="{{ site.baseurl }}/assets/videos/physics_categories/teacher_{{ idx }}.mp4" type="video/mp4">
+    </video>
+  </div>
+  <div class="method-block">
+    <div class="method-title">Teacher SFT</div>
+    <video loop muted playsinline controls preload="none" class="lazy-video">
+      <source src="{{ site.baseurl }}/assets/videos/physics_categories/sft_{{ idx }}.mp4" type="video/mp4">
+    </video>
+  </div>
   <div class="method-block">
     <div class="method-title">DMD2</div>
     <video loop muted playsinline controls preload="none" class="lazy-video">
