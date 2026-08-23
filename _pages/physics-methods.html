@@ -1,0 +1,386 @@
+---
+title: 'Physics methods: omnistream vs v_jepa vs DMD2'
+permalink: /physics-methods/
+author_profile: false
+layout: single
+classes: wide
+processes:
+- name: Collision
+  slug: collision
+  n: 487
+  omni: '0.1805'
+  vjepa: '0.1593'
+  dmd2: '0.2381'
+  best: v_jepa
+  pbest: '0.93'
+  note: Both alignment methods beat DMD2 significantly; omnistream vs v_jepa is a tie.
+  groups:
+  - title: ''
+    examples:
+    - index: 37
+      id: 00002049
+      prompt: 'The video captures a slow-motion elastic collision and rebound: a smooth, solid wooden sphere drops vertically from above and bounces repeatedly off a flat, dark green rubber or foam pad resting on a white surface against a plain light-gray background. The ball is turned from dense, close-grained hardwood with a visible concentric grain pattern and a polished, slightly glossy surface; its rigidity and substantial mass mean it stores the impact energy as brief elastic deformation of both the ball and the pad rather than shattering or denting. As the sphere descends under gravity and strikes the pad, the soft, compressible pad deforms locally under the ball''s weight, absorbing part of the kinetic energy and then elastically restoring, which launches the rigid wooden ball back upward. Because the ball is hard and the pad is resilient, the collision is largely elastic, so the ball rebounds to a height slightly lower than its starting point, decaying over successive bounces as energy dissipates into heat and sound within the pad''s foam structure. The ball''s rotation is visible as the grain pattern shifts between frames, indicating a slight spin imparted during contact. The camera holds a steady, low frontal close-up, framing the pad horizontally across the lower third and the ball''s full vertical trajectory above it, so the rhythmic descent, brief compression at contact, and ascent of each bounce read clearly against the neutral backdrop.'
+    - index: 46
+      id: 00002779
+      prompt: 'The video documents the steady translational motion of an elevated monorail train crossing a dense urban canyon under an overcast sky. The train is a multi-car articulated vehicle, its boxy carriages painted in a vivid livery of blue, green, and white with large graphic murals, running on a single central concrete guideway supported by thick, evenly spaced reinforced-concrete pillars. The physical process at work is constrained linear motion: the rigid, heavy train is guided by a mechanical system in which its wheels grip the sides of the central beam, so the entire mass translates horizontally along the track without lateral drift or vertical bounce. Because the guideway is a continuous, level concrete structure, the train maintains a constant, smooth velocity as it passes the camera, its carriages gliding past in sequence. To the right, a tall multi-story residential building with terracotta and white facades, rows of windows, and external air-conditioning units stands close to the track, while older apartment blocks and a steep, vegetation-covered hillside occupy the background and foreground. The camera holds a static, low-angle wide shot looking upward, framing the train as it traverses the left-to-right field of view against the flat grey clouds, emphasizing the scale of the elevated infrastructure relative to the surrounding architecture. The motion is uninterrupted and uniform, with no acceleration, deceleration, or visible mechanical disturbance, conveying the quiet, engineered regularity of the transit system.'
+    - index: 63
+      id: 00003912
+      prompt: The video captures a high-speed impact fracture of a brittle, frozen material, likely a block of ice, resting on a solid base. The central object is a rectangular block of deep blue, translucent ice, sitting atop a thick, bright red cylindrical base that appears to be made of rigid plastic or painted metal. The ice block is highly brittle and crystalline, meaning it has very low tensile strength and cannot deform plastically under sudden load. At the moment of impact, a concentrated force strikes the top surface of the ice. Because the ice is rigid and brittle, the kinetic energy of the impact cannot be absorbed through compression or bending; instead, it instantly exceeds the material's fracture toughness, causing a catastrophic shattering. The impact point erupts into a complex, radial spray of jagged, glass-like shards and fine crystalline fragments. These fragments are propelled upward and outward in a chaotic, web-like pattern, catching the light with sharp, translucent edges. As the initial burst dissipates, the main body of the blue block remains largely intact but is visibly chipped and fractured at the point of contact, with a distinct crater-like depression where the material was blasted away. The red base remains completely stationary, providing a stable, high-mass anchor that contrasts with the violent, high-velocity fragmentation of the lightweight, brittle ice above it. The camera maintains a tight, close-up frontal view, freezing the rapid temporal evolution of the shatter from the initial dense burst to the dispersing mist of debris.
+    - index: 112
+      id: '00006550'
+      prompt: The video captures a high-speed ballistic impact and fragmentation event, recorded at 76,086 frames per second. A rigid, blunt projectile strikes a vertical target assembly consisting of a pale wooden backing board, a block of dark, fibrous material, and a pinkish, semi-solid gelatinous or flesh-like mass studded with bright red fragments. Because the target material is soft, wet, and highly deformable rather than rigid, the projectile does not shatter it into hard shards; instead, it punches through the mass, converting its kinetic energy into a massive radial hydrodynamic splash. The impact instantly liquefies the outer layers of the pink substance, driving a dense, turbulent curtain of pale pink droplets, mist, and larger chunks outward and upward in a fan shape. The bright red fragments, which are denser and more solid than the surrounding pink matrix, are ejected ballistically, tumbling through the air as distinct pieces. A fine white mist of vaporized or atomized fluid rises from the core of the impact zone. The camera holds a steady, close-up side profile view against a blurred green background, freezing the complex fluid dynamics of the splash and the chaotic trajectory of the solid debris as they disperse from the point of impact.
+    - index: 120
+      id: 00006904
+      prompt: The video captures a high-speed impact pulverization event, filmed in extreme slow motion against a dark, out-of-focus background. A rigid, dark metallic tool, likely the tip of a hammer or a heavy press, descends vertically and strikes a small, brittle, tan-colored solid resting on a flat surface. The target material appears to be a dry, porous substance, such as a piece of chalk, a dried organic matter, or a soft mineral. Because the object is brittle and lacks tensile strength, it does not deform plastically or bounce; instead, the kinetic energy of the descending tool is instantly transferred into the material, exceeding its fracture limit. This causes the object to shatter violently into a cloud of fine white dust and larger, irregular angular fragments. The impact generates a radial spray of debris; larger chunks are ejected outward with significant velocity, while a dense mist of microscopic powder billows upward and outward from the point of contact. As the tool retracts upward, the camera remains static at a low angle, focusing on the aftermath. The larger fragments are seen suspended in mid-air, slowly decelerating under gravity, while the fine dust lingers in the air, creating a hazy, textured veil before gradually settling back onto the surface, leaving a disturbed, powdery residue where the solid object once stood.
+    - index: 123
+      id: 00006996
+      prompt: The video captures the rotational dynamics and frictional damping of a small, copper-colored coin spinning on a flat, terracotta-tiled surface. The coin is a rigid, dense metallic disc with a smooth, slightly reflective surface. Initially, the coin is in a state of rapid rotation, spinning on its edge or at a steep angle, which causes it to appear as a blurred, horizontal copper streak due to the high angular velocity. As the coin rotates, the friction between its curved edge and the hard, static surface of the tile acts as a dissipative force, gradually converting the coin's rotational kinetic energy into heat and sound. Over the course of the video, the coin's angular velocity decreases, and the motion blur diminishes, revealing the coin's circular shape and flat face more clearly. The coin's orientation also shifts, transitioning from a near-vertical spin to a flatter, more stable resting position as the rotational energy is depleted. The camera remains stationary, positioned at a low angle close to the ground, keeping the coin in sharp focus while the background, featuring a white appliance and a dark doorway, remains softly out of focus. The process concludes with the coin coming to a near-complete stop, lying flat on the tile, its motion fully arrested by surface friction.
+    - index: 143
+      id: 00007768
+      prompt: 'The video captures the high-speed ballistic shattering of a thick, teal-tinted glass block resting on a light wooden surface. The core physical event is a violent, impact-driven fracture: a high-velocity projectile, entering from the left, strikes the glass and instantly exceeds the material''s tensile and shear limits. Because glass is an amorphous, highly rigid, and extremely brittle solid, it cannot deform plastically or absorb the kinetic energy through bending; instead, the impact energy propagates as a shockwave that causes the block to catastrophically fail. The glass shatters into dozens of sharp, angular shards and fine, glittering powder, which are blasted radially outward in a dense, spherical cloud. A thick plume of white dust and pulverized glass particles billows from the center of the impact, diffusing the light and momentarily obscuring the void where the solid block was. As the macroscopic shards fly through the air, they tumble and rotate, their curved, translucent edges catching the bright studio lighting. The camera maintains a fixed, side-on close-up perspective against a dark background, utilizing a high frame rate to freeze the complex, chaotic trajectory of the debris and the expanding dust cloud as it slowly disperses into the surrounding air.'
+    - index: 258
+      id: '00014221'
+      prompt: 'The video captures a high-velocity impact and displacement event: a massive, heavy steel sledgehammer falls vertically from above onto a small, upright inflatable dinosaur toy resting on a flat, dry sandy surface. The hammer is a dense, rigid metal solid with a reflective, slightly weathered surface, while the target is a lightweight, air-filled vinyl object with a yellow and green body and an open mouth. Because the hammer is solid and extremely dense, its downward momentum transfers a violent, concentrated force to the toy upon contact. The inflatable, lacking the structural rigidity of a solid object, instantly ruptures and collapses under the sudden compression. As the hammerhead slams down, it punches through the thin vinyl, causing the air to vent explosively and the toy''s body to flatten and scatter into fragments. The immense kinetic energy of the falling metal drives the hammerhead deep into the loose sand, creating a crater. This forceful penetration displaces the granular sand, ejecting a massive, radial cloud of dirt and dust outward and upward in a violent burst. The camera holds a static, medium-wide shot from a slightly elevated angle, capturing the full trajectory of the hammer''s descent, the instantaneous destruction of the toy, and the subsequent settling of the sand cloud as the hammerhead comes to rest buried in the ground.'
+- name: Deformation
+  slug: deformation
+  n: 382
+  omni: '0.3618'
+  vjepa: '0.4079'
+  dmd2: '0.4249'
+  best: omnistream
+  pbest: '0.89'
+  note: All three are statistically tied here — no pairwise CI excludes zero.
+  groups:
+  - title: ''
+    examples:
+    - index: 3
+      id: '00000716'
+      prompt: 'The video shows a compression-driven shattering: a heavy cylindrical hydraulic press ram descends vertically onto a vertical wire cage holding a stack of five decorative ceramic teacups, each with a handle, set on a flat steel anvil plate. The cups are glazed porcelain, a hard, brittle, low-ductility material, which is exactly why they fail by fracture rather than by bending or flattening. As the polished steel ram presses down on the top cup, the axial load exceeds the thin ceramic walls'' tensile and shear strength, so the porcelain cracks radially and bursts into angular shards. Because the cups are encased in a rigid open wire frame, the fragments are confined laterally at first, but the breaking pieces spray outward through the gaps in the cage, tumbling and skittering across the steel base as fine white dust and glaze chips lift into the air. The lower cups remain largely intact at first, bearing the load through the crushed upper ones, and the wire cage deforms slightly inward under the sustained pressure. The camera holds a steady, slightly low frontal close-up against a blurred green wall, capturing the sudden transition from a neat stack of patterned cups to a cascade of flying ceramic debris and the continuing slow downward travel of the metal ram.'
+    - index: 13
+      id: '00001576'
+      prompt: 'The video captures a vertical compression and crushing process: a massive, polished steel ram of a hydraulic press descends onto a block of light gray, porous solid material resting on a hazard-striped yellow and black base. The specimen is a brittle, granular aggregate — resembling a hardened foam, concrete, or mineral block — that is dry, matte, and already fractured with visible surface cracks before the ram fully engages. Because the material is a rigid, particulate solid with low tensile strength, it cannot plastically deform or flow like a soft polymer; instead, the immense downward force from the heavy cylindrical steel ram exceeds the internal bonding strength of the grains, causing the block to pulverize. As the ram presses down, the top surface of the block crumbles into a fine, chalky powder that cascades downward and outward in a continuous stream. The intact upper portion of the block progressively shatters into angular chunks and rubble, which tumbles off the sides and piles up on the base. The steel ram continues its steady descent, grinding the remaining structure into a growing mound of gray dust and small debris, demonstrating the complete disintegration of the brittle solid under sustained axial load. The camera holds a static, frontal close-up, clearly framing the interaction between the smooth, reflective metal and the disintegrating, powdery material.'
+    - index: 16
+      id: '00001632'
+      prompt: The video captures a high-speed compression fracture of a cluster of hard-boiled eggs. A heavy, polished steel cylindrical ram, part of a hydraulic press, descends vertically onto a pile of pale, cream-colored eggs resting on a flat, yellow-painted steel base. The eggs are rigid, brittle solids with a hard, calcified outer shell enclosing a dense, solid protein interior. Because the material is non-elastic and brittle, it cannot deform plastically to absorb the energy of the descending ram. Instead, as the ram's flat bottom surface makes contact, the immense compressive force instantly exceeds the tensile strength of the eggshells, causing them to shatter explosively. The solid yolks and whites, unable to compress, are pulverized and ejected radially outward from the point of impact. The camera is positioned at a low, frontal angle, capturing the violent fragmentation in slow motion. Large, curved shards of shell and chunks of solid white protein are launched into the air, spinning and tumbling against a dark background framed by yellow and black diagonal hazard stripes. Fine white dust and microscopic particles from the crushed protein and shell remain suspended in the air as the larger fragments drift away, illustrating the complete mechanical destruction of the brittle objects.
+    - index: 89
+      id: 00006528
+      prompt: 'The video captures a compression-driven comminution event: a massive, polished cylindrical steel ram of a hydraulic press descends vertically onto a pile of grey, crystalline rock fragments resting on a yellow-and-black diagonally striped cylindrical platform. The rock is a hard, brittle mineral aggregate, and its lack of ductility or elasticity dictates the outcome. As the heavy steel ram presses down, the axial load exceeds the shear and compressive strength of the individual crystal grains, causing the fragments to shatter and grind against one another rather than deform plastically. Because the material is rigid and brittle, the applied force propagates through the pile as a crushing wave, pulverizing the larger chunks into a fine, white-grey powder that cascades over the rim of the striped platform and sprays outward in a continuous rain of granules. The larger, angular shards at the top are progressively flattened and fractured into smaller debris as the ram continues its slow, relentless descent, while the surrounding floor is already littered with previously crushed rock fragments. The camera holds a steady, close-up frontal angle, focusing tightly on the contact zone between the steel ram and the rock, making the steady stream of falling powder and the gradual reduction of the rock pile clearly visible against the pale industrial wall in the background.'
+    - index: 101
+      id: 00007393
+      prompt: The video shows the compression of a heated, glowing metal cylinder (a hot billet) by a hydraulic press ram. A large vertical steel ram, its polished column marked with a yellow-and-black hazard band and a circular pressure gauge, descends onto a flat circular steel anvil plate. Beneath it sits a short, fat cylinder of metal heated to incandescence, glowing bright white-yellow at its core and orange at its edges, resting on a matching lower steel plate. Because the metal is at a very high temperature, it has become soft and highly ductile, losing the brittleness it would have at room temperature; instead of cracking or shattering under the ram's load, it deforms plastically. As the ram presses down, the glowing billet flattens vertically and bulges outward horizontally, its diameter widening as its height shrinks, the hot material flowing laterally to fill the space. Thin, curling flakes of glowing orange metal peel away from the sides and curl outward like ribbons, and small sparks and embers flick upward from the contact zone where the hot surface meets the cooler steel. The billet continues to spread into a low, wide, glowing disc. The camera holds a steady frontal close-up against a dark green wall with two lightning-bolt warning signs, keeping the glowing billet centered so the progressive flattening and the curling hot flakes read clearly.
+    - index: 120
+      id: 00008837
+      prompt: 'The video shows a compression-driven fracture and crushing of a brittle, dark-gray solid block, likely a cast-iron or hard ceramic test specimen, resting on a heavy steel anvil. The specimen is a roughly rectangular block with a stamped "30" marking and a large, irregular hole bored through its center, giving it a hollow, weakened core. It is positioned between the flat, polished lower face of a massive cylindrical hydraulic ram above and a thick, yellow-and-black hazard-striped steel base plate below. Because the material is a hard, brittle solid with a void in the middle, it cannot plastically flow or bend; instead, the axial load from the descending ram concentrates stress around the edges of the central hole. As the ram presses down, the thin walls of the block crack and buckle inward, then the entire structure catastrophically fails: the block shatters into jagged, angular shards that spray outward and downward, with a visible puff of fine dust and small fragments scattering across the base plate. The ram continues its slow downward stroke, compacting the remaining rubble into a flattened, fragmented pile. The camera holds a steady, close-up frontal view at the level of the specimen, clearly capturing the onset of cracking, the sudden burst of debris, and the residual crushed fragments left between the ram and the anvil.'
+- name: Explosion
+  slug: explosion
+  n: 300
+  omni: '0.3304'
+  vjepa: '0.2543'
+  dmd2: '0.3603'
+  best: v_jepa
+  pbest: '0.98'
+  note: v_jepa beats both omnistream and DMD2 significantly — the clearest result in the set.
+  groups:
+  - title: ''
+    examples:
+    - index: 11
+      id: 00000906
+      prompt: 'The video captures the explosive demolition of a derelict, single-story concrete building. The structure is composed of rigid, brittle reinforced concrete walls and a flat roof, a material that possesses high compressive strength but very low tensile strength, making it highly susceptible to sudden fracture. The physical process begins with a violent internal detonation, likely from shaped explosive charges, which generates a rapidly expanding shockwave. Because the concrete cannot stretch or flow to accommodate this sudden pressure spike, the internal force exceeds the material''s tensile limit, causing the left-side wall and roof to catastrophically rupture outward. The demolition proceeds in a distinct sequence: the initial blast shatters the far end of the building, ejecting large, jagged chunks of concrete and rebar into the air. This structural failure propagates along the length of the building, causing the roof to collapse and the remaining walls to crumble. A massive, turbulent cloud of light gray dust and pulverized concrete immediately erupts from the impact zone, billowing upward and to the left as the dense particulate matter is carried by the shockwave and buoyancy. The camera maintains a static, medium-long shot from across a field of dry, brown brush, capturing the entire structural collapse and the subsequent settling of the dust cloud against a bright, partly cloudy sky.'
+    - index: 47
+      id: '00003672'
+      prompt: 'The video captures a violent, high-energy combustion and structural failure event: a large wooden structure, likely a shed or barn, is being destroyed by an intense fire. The core physical process is rapid pyrolysis and gas expansion, where the heat from the fire causes the volatile compounds within the solid wood to break down and ignite, creating a massive fireball. The structure is made of combustible timber, a material that, once past its ignition point, undergoes exothermic decomposition, releasing flammable gases that feed the flames. As the fire engulfs the building, the internal pressure from the expanding hot gases and the loss of structural integrity in the charred wood cause the walls and roof to blow outward. This is visible as a sudden, explosive expansion of the fireball, which propels burning debris, splintered wood, and glowing embers into the air in a radial pattern. The debris, still alight, tumbles through the smoke-filled sky before falling back to the ground. The fire itself is a turbulent fluid, with bright yellow and orange flames rising rapidly due to convection, while thick, dark smoke billows upward, carrying unburned particulates. The camera holds a static, wide shot from a safe distance, capturing the full scale of the destruction as the building is reduced to a churning mass of flame and smoke, with the ground in the foreground littered with burning wreckage.'
+    - index: 114
+      id: 00009577
+      prompt: 'The video captures a high-energy explosion-driven structural demolition: a large, white-painted, boxy industrial or military structure is violently destroyed by an internal or adjacent blast. The structure is built from rigid, flat metal or composite panels joined at sharp angles, and because these panels are stiff but not ductile, the sudden overpressure from the detonation shatters and tears them apart rather than bending them smoothly. At the moment of detonation, a bright orange fireball and a dense, rapidly expanding white smoke cloud erupt from the center of the structure, generating a shockwave that propagates outward. The blast pressure exceeds the tensile and shear strength of the panel joints, causing the walls and roof to rupture, peel away, and be hurled into the air as large angular fragments. Twisted metal struts, rebar-like rods, and smaller debris are ejected radially, tumbling and spinning as they fly outward against a backdrop of dark evergreen trees. The ground is a flat, dry, dusty field, and the shockwave kicks up a low, horizontal sheet of dust and smoke that rolls across the surface. Over the following seconds, the main body of the structure collapses and tumbles, its panels folding and sliding down into the dust cloud, while the fireball dissipates and the white smoke billows upward and outward, gradually obscuring the wreckage. The camera holds a steady, wide, slightly elevated frontal view, capturing the full radial spray of debris, the expansion of the smoke column, and the progressive collapse of the shattered structure into a smoldering heap.'
+    - index: 141
+      id: '00012257'
+      prompt: 'The video captures a violent explosive demolition of a small, dilapidated wooden structure, likely a shed or shack, situated in a wooded clearing. The core physical process is a rapid, high-energy gas expansion: an internal charge detonates, generating superheated gases that expand far faster than the brittle, low-tensile-strength wood and rusted metal siding can resist. Because the structure is made of rigid but fragile timber and thin sheeting, the sudden overpressure cannot be absorbed by elastic deformation; instead, it ruptures the walls outward, blasting the frame apart. At the moment of detonation, a bright flash and a dense, billowing cloud of tan dust and pulverized wood fragments erupt from the building''s center, expanding radially across the gravel ground. The shockwave lifts loose dirt, leaves, and small debris into the air, creating a chaotic spray that scatters toward the camera. The remaining skeletal frame of the shed, including a rusted metal roof panel and vertical support beams, is thrown into disarray, with panels peeling away and the roof tilting as the supporting walls are destroyed. The camera holds a steady, low frontal angle, capturing the sudden transition from an intact structure to a cloud of dust and scattered wreckage, the debris settling slowly as the smoke lingers in the sunlit clearing.'
+    - index: 190
+      id: 00016559
+      prompt: The video captures a high-energy impact and fluid displacement event in a stagnant, algae-covered pond. The physical process begins with a large, dense, light-colored solid object (likely a heavy rock or stone) entering the frame from above and plunging vertically into the water. The pond's surface is a thick, viscous layer of green algae and organic debris, which acts as a semi-solid membrane over the underlying liquid. As the dense solid strikes the surface, its kinetic energy is rapidly transferred to the surrounding medium. Because the water is incompressible and the algae layer is relatively thin, the impact creates a sudden, high-pressure displacement that violently ruptures the surface tension. This results in a massive, radial splash, ejecting a towering column of murky water, suspended droplets, and scattered dark organic debris high into the air. The debris is flung outward in a wide, conical spray, demonstrating the transfer of momentum from the falling mass to the fluid and surface matter. The camera maintains a static, wide-angle shot from the bank, capturing the full vertical height of the splash and the subsequent settling of the water as the turbulence dissipates and the surface begins to smooth out.
+    - index: 192
+      id: '00016700'
+      prompt: 'The video captures a high-speed pyrotechnic impact and fluid ejection: a small explosive charge detonates at the base of an upright, open-topped metal paint can, driving a violent column of liquid paint upward and outward. The can is a rigid, thin-walled steel or tin container, painted yellow, white, and red, sitting on a bed of green grass; because its walls are stiff, the sudden internal pressure spike from the blast does not crush it but instead accelerates the loose liquid contents it holds. Inside the can are two low-viscosity, freely flowing liquids — a vivid blue and a vivid red — and the explosive impulse launches them as a coherent, high-velocity jet that rises vertically before breaking into a crown-like splash. The red paint, ejected with the greatest momentum, arcs and stretches into a long, ribbon-like sheet that bends over to the right, while the blue paint fans out to the left in a broader, flatter sheet; both retain thin, connected ligaments and trailing droplets because the liquid''s surface tension holds the fast-moving mass together momentarily before gravity and air drag fragment it into fine mist. Simultaneously, a dense white smoke plume billows up from the charge, and a shower of glowing orange sparks scatters radially through the smoke, marking the combustion of the pyrotechnic material. The camera holds a steady, low, side-on close-up at grass level, freezing the mid-air splash so the stretching red ribbon, the blue fan, the rising smoke, and the sparkling sparks are all sharply resolved against the dark leafy background.'
+    - index: 233
+      id: 00020832
+      prompt: The video captures a violent deflagration and explosive rupture of a cylindrical metal firework shell, likely a Roman candle or mortar, resting on a wooden plank surface in the dark. The core physical process is a rapid gas expansion driven by the combustion of an internal energetic propellant. Initially, a bright, white-hot ignition flash erupts from the open base of the shell, indicating the start of the burn. As the solid propellant inside the thin-walled metal tube combusts, it generates a massive volume of hot gas at extremely high pressure. Because the metal casing is a rigid but relatively thin container, the internal pressure quickly exceeds the tensile strength of the metal, causing the shell to catastrophically rupture and burst open. This rupture releases the pressurized gases and the unburned or partially burned propellant in a sudden, radial expansion. The result is a massive, turbulent fireball of orange and yellow flame that engulfs the shell, accompanied by a dense cloud of white smoke and a spray of glowing sparks and molten metal fragments that are ejected outward and upward. The camera holds a steady, low-angle close-up, capturing the sudden transition from a contained object to a chaotic, expanding cloud of fire, smoke, and debris.
+    - index: 299
+      id: 00027359
+      prompt: The video captures a high-yield explosive detonation striking a low, flat-roofed mud-brick structure in an arid rural landscape. The central physical process is a violent blast, driven by the rapid chemical combustion of a warhead that generates an expanding fireball and a supersonic shockwave. The target building is constructed from packed earth and mud, a material that is rigid and dense but highly brittle, lacking the tensile strength to withstand sudden pressure differentials. In the first instant, a bright orange fireball erupts at the center of the compound, marking the point of impact where the chemical reaction releases immense thermal and kinetic energy. As the shockwave propagates outward, the overpressure physically lifts and pulverizes the mud-brick walls, converting the solid structure into a massive, billowing column of grey-brown dust and debris that rises vertically into the sky. Because the earth is composed of loose particulates, the blast does not merely crack the building but atomizes it, sending a turbulent plume of fine dust and larger rubble fragments high above the surrounding trees. In the foreground, a mound of loose soil and rocks remains undisturbed, providing a static reference that emphasizes the scale of the explosion. The camera maintains a long-range, static wide shot, capturing the entire lifecycle of the blast from the initial flash to the slow, billowing expansion of the dust cloud.
+- name: Melting
+  slug: melting
+  n: 188
+  omni: '0.4295'
+  vjepa: '0.4978'
+  dmd2: '0.6030'
+  best: omnistream
+  pbest: '0.81'
+  note: omnistream beats DMD2 significantly; the other two pairings are ties.
+  groups:
+  - title: Ice
+    examples:
+    - index: 19
+      id: '00003163'
+      prompt: 'The video captures the phase transition of melting: a single, roughly cylindrical block of ice, milky-white and translucent with a faint bluish tint near its top edge, rests directly on a flat, dark gray granite paving slab. Because ice is a crystalline solid held in the solid state only below its melting point, and because the surrounding stone and ambient air are warmer than zero degrees Celsius, thermal energy flows from the stone into the ice, breaking the hydrogen-bonded lattice at the surface and converting the solid into liquid water. As the process unfolds, the block visibly shrinks: its height decreases frame by frame, its rounded top flattens, and its base thins as the lower layers liquefy first. A shallow, glistening puddle of clear meltwater spreads outward from the block''s footprint, pooling in the grainy depressions of the stone and reflecting the overcast sky. The stone slab, being a dense, thermally conductive mineral aggregate, acts as a steady heat sink, accelerating the melt at the contact surface and keeping the water film thin and mobile. No mechanical force is applied; the entire transformation is driven purely by passive heat transfer. The camera holds a fixed, low, slightly oblique close-up angle, framing the ice against a backdrop of larger, irregular flagstones, so the gradual loss of volume and the creeping expansion of the wet halo are the dominant visual changes over the short clip.'
+    - index: 75
+      id: 00011369
+      prompt: The video captures the solar-driven melting of snow clinging to a small, woody shrub. The central physical process is the phase transition of solid ice crystals into liquid water, caused by direct solar radiation and ambient air temperature rising above the freezing point. The plant is a low-growing, evergreen shrub with dense, small, grey-green leaves and thin, rigid brown stems. Resting on the upper branches and nestled between the leaves are irregular, granular clumps of snow. Because the snow is composed of loosely packed ice crystals with high albedo, it initially reflects light but gradually absorbs enough solar energy to begin melting. Over the course of the video, the snowpack visibly thins and recedes; the dense, opaque white mounds lose volume, revealing more of the underlying green foliage and brown stems. The melting is not uniform but progresses from the exposed upper surfaces downward, where the crystals lose their structural integrity and coalesce into tiny, glistening droplets of water that cling to the leaves and twigs due to surface tension. The camera maintains a steady, close-up macro view with a shallow depth of field, blurring the background into a soft wash of blue sky and brown earth, which keeps the focus sharply on the granular texture of the dissolving snow and the emerging wetness of the plant.
+    - index: 79
+      id: 00011924
+      prompt: The video captures the slow thermal melting of solid ice on a warm surface. A small cluster of four irregular, translucent ice cubes rests on a flat, light-gray concrete or stone slab, their surfaces frosted with a thin layer of white condensation and internal air bubbles. Because the ice is solid water below its melting point, it holds its rigid, faceted shape until the ambient heat from the surrounding air and the slab conducts into its interior. As the video progresses, the outer layers of each cube begin to soften and liquefy; a shallow, clear puddle of water forms and gradually spreads outward from the base of the cluster, its dark, reflective surface growing larger over time. The ice cubes themselves slowly lose volume and sharpness, their edges rounding and their overall height diminishing as the solid phase transitions into liquid. The camera remains static in a slightly elevated, wide shot, keeping the small melting cluster centered against the vast, empty, speckled gray ground, emphasizing the quiet, gradual rate of the phase change and the steady accumulation of meltwater pooling beneath the shrinking ice.
+    - index: 20
+      id: 00003269
+      prompt: 'The video captures the melting and gravitational collapse of a large, solid block of clear ice resting on a wet, dark concrete floor. The ice block is initially a tall, roughly rectangular mass with a bulbous, rounded top, its transparent crystalline structure refracting the bright yellow and pink colors of the textured wall and vertical pole behind it. The core physical process is phase change: as ambient heat transfers into the solid, the ice''s crystal lattice breaks down and it converts into liquid water. Because liquid water has no shear strength and flows under gravity, the lower portion of the block loses its structural support and begins to slump, its edges rounding and bulging outward into a wider, lower mound. A shallow, reflective pool of meltwater already surrounds the base, spreading across the porous concrete. Over the sequence, the block visibly lowers in height and spreads in footprint, its surface becoming smoother and more glassy as the outer layers liquefy, while the upper mass retains a more rigid, faceted form that continues to sag. The camera holds a static, low-angle close-up near ground level, emphasizing the glistening, high-refractive-index surface of the ice and the dark puddle, with a parked motorcycle and a blue woven sack visible in the background. The process ends with the ice in a partially melted, deformed state, its original geometry largely lost to the flow of the liquid phase.'
+    - index: 35
+      id: '00005401'
+      prompt: 'The video captures a slow, room-temperature melting process: a small, roughly spherical ball of frozen water rests in the center of a shallow, square white ceramic dish, and over the course of the clip it gradually loses its solid form and converts into liquid. The ball is a dense, semi-translucent mass of ice, its surface slightly granular and pitted from the frozen crystal structure, with a tiny red dot and faint dark marks on the dish beside it serving as static reference points. Because the ball is solid water held below its melting point, it cannot flow or deform plastically; instead, as ambient heat conducts into its surface, the outer layer of ice crystals absorbs latent heat and transitions into a thin film of liquid. This meltwater, being a low-viscosity fluid, spreads outward under gravity and surface tension, forming a growing, glossy pool that creeps across the glossy glazed floor of the dish, its wet sheen reflecting the overhead light. The ice ball itself visibly shrinks and rounds off, its edges softening as the mass diminishes, while the surrounding liquid pool expands in area and depth. The camera holds a fixed, high, slightly angled overhead view, keeping the dish centered against a textured red cloth background, so the gradual boundary shift between the shrinking solid and the spreading liquid is the sole dynamic element.'
+    - index: 116
+      id: '00017777'
+      prompt: 'The video captures the phase transition of melting: a single, roughly spherical ice cube rests on a sun-baked, dark gray concrete slab. The concrete is a coarse aggregate mix, its granular surface of embedded pebbles and mineral chips absorbing solar radiation and radiating heat back into the cube. The ice is translucent white, and because it is a crystalline solid sitting above its 0-degree-Celsius melting point, its outer surface begins to liquefy into a thin film of clear water. Over the course of the clip, the cube visibly shrinks: its rounded edges soften and flatten as the solid lattice breaks down into liquid, and a small puddle of meltwater spreads radially across the rough concrete, pooling in the tiny depressions between the aggregate grains. The cube''s mass steadily decreases while its height drops, the remaining solid ice becoming a smaller, flatter dome as more of it converts to water. No external force acts on the cube; the driving mechanism is purely thermal, with heat flowing from the hot pavement into the colder ice until the solid fully dissolves into the surrounding puddle. The camera holds a static, low, close-up angle looking down at the slab, keeping the melting cube centered and emphasizing the slow, quiet erosion of the ice against the textured stone.'
+  - title: Not ice
+    examples:
+    - index: 50
+      id: 00007295
+      prompt: 'The video captures the thermal melting of solid chocolate chunks. A clear, cylindrical glass tumbler sits on a white ceramic candle warmer, which features a circular cutout at its base revealing the glowing, flickering flame of a lit tea light candle. Inside the glass, several irregular, dark-brown chunks of solid chocolate rest at the bottom, initially submerged in a shallow pool of liquid. The physical process is driven by conduction and convection: the candle''s flame radiates and convects heat upward into the ceramic vessel, which then transfers thermal energy through the glass bottom and the surrounding liquid to the solid chocolate. Because chocolate is a fat-based solid with a relatively low melting point (around 30-35°C), the sustained gentle heat causes the solid chunks to gradually soften and liquefy. Over the course of the video, the distinct angular shapes of the chocolate pieces become increasingly rounded and slumped as their internal structure loses rigidity. The volume of the dark, viscous liquid pool at the bottom of the glass steadily increases as the solid mass decreases, with the chunks eventually reducing to small, submerged fragments. The camera maintains a static, eye-level close-up against a black background, clearly isolating the slow phase transition from solid to liquid.'
+      material: chocolate
+    - index: 44
+      id: '00006523'
+      prompt: 'The video shows a slow, low-temperature melting and coalescing process: a small, irregular chunk of silvery metallic material resting on a thin, transparent circular disc (likely glass or clear polymer) gradually loses its solid shape and slumps into a flatter, more rounded puddle. The metal piece has a matte, granular, crystalline surface with a few brighter facets, indicating a solid metal at or just above its melting point. Because the material is a low-melting metal with relatively low viscosity once liquefied, gravity and surface tension drive the change: the outer edges soften first and begin to spread outward across the smooth, non-stick surface of the disc, while the central mass sags downward, losing its angular peaks. Over the course of the clip, the chunk visibly lowers in height and widens in footprint, its sharp corners rounding off as the molten fraction flows and the remaining solid core sinks into the liquid pool. No external force, flame, or machine is visible; the transformation is purely thermally driven, with the metal''s own heat softening it in place. The camera holds a steady, slightly elevated side angle against a plain white background, keeping the small metallic mass and the edge of the transparent disc in sharp focus so the subtle slump, spread, and rounding of the melting metal can be tracked frame by frame.'
+      material: liquid metal
+    - index: 34
+      id: '00005267'
+      prompt: The video shows a slow, low-temperature thermal softening and flow of a viscous sugar-based glaze, driven by the radiant and convective heat of a small flame. The central object is a ring-shaped confection, resembling a chocolate donut, sitting in a shallow clear glass bowl filled with a brown liquid. The donut is coated in a dark, glossy chocolate icing, studded with multicolored sugar sprinkles, and pierced by two white candle sticks topped with curled, burnt wicks. At the start, a small, steady flame burns from the wick on the right. Because the chocolate glaze is a viscous, thermoplastic sugar and fat mixture, it does not burn or shatter under this gentle heat; instead, as the flame's thermal energy conducts into the icing, the glaze's viscosity drops and it begins to melt and slump. Over the course of the clip, the dark coating visibly thins and drips downward over the ring's inner and outer edges, pooling into the surrounding liquid, while the sprinkles shift slightly with the sagging surface. The flame itself flickers and gradually diminishes, the wick blackening as it consumes its fuel, and the molten glaze continues its slow, gravity-driven flow. The camera holds a fixed, slightly elevated frontal close-up against a plain white background, keeping the melting icing, the dripping edges, and the fading flame in sharp focus throughout the quiet thermal process.
+      material: sugar glaze
+    - index: 62
+      id: 00008874
+      prompt: 'The video captures a slow, diffusion-driven dissolution and pigment-release process: five small, round, gelatin-coated candy spheres rest in a shallow pool of clear liquid on a pale surface, and over the span of the clip each sphere''s colored shell gradually leaches dye into the surrounding water. The spheres are soft, semi-permeable gelatin gels, and it is this porous, water-soluble material that dictates the behavior: as the liquid wets each shell, the dye molecules diffuse outward through the gel matrix into the bulk water, so the colored boundary of each candy slowly fades and spreads. From left to right the spheres are orange, green, yellow, orange-red, and dark maroon, and each releases a corresponding plume of pigment that blooms outward in soft, feathered tendrils. The green and yellow plumes intermingle in the center, blending into a hazy chartreuse, while the maroon sphere on the right darkens the water into a deep wine-red halo. The gelatin shells themselves remain largely intact and spherical, merely lightening in color as their pigment drains away, rather than collapsing or dissolving into sludge, because the gel structure holds its shape even as the dissolved dye migrates. The camera holds a fixed top-down close-up, so the only motion is the slow, viscous spreading of the colored fluid, the plumes widening and their edges softening frame by frame until the whole pool is a gradient of blended hues.'
+      material: candy shells
+    - index: 92
+      id: '00014274'
+      prompt: The video shows the thermal melting of two frozen popsicles resting on a hot, sun-baked surface. The two objects are a bright orange popsicle and a deep red popsicle, each mounted on a flat white wooden stick. They are made of a frozen sugar-and-water syrup, a material that is rigid and solid below its freezing point but transitions into a low-viscosity liquid as it absorbs heat. The popsicles lie directly on a rough, reddish-brown stone or brick pavement that has been heated by intense sunlight, acting as a conductive heat source. As thermal energy transfers from the hot stone into the cold frozen candy, the ice crystals within the syrup break down and the solid structure collapses into a fluid. Because the melted syrup is a thin, watery liquid, it flows freely under gravity, spreading out from the base of each popsicle into a shallow, glossy puddle. The orange syrup pools as a translucent amber liquid, while the red syrup spreads as a darker crimson pool, and a small amount of white, foamy residue gathers at the leading edge of the red melt. Over the course of the clip, the puddles slowly expand outward across the textured stone, the popsicles themselves gradually losing volume and rounding at the edges as their frozen mass liquefies. The camera holds a static, slightly elevated close-up angle, capturing the slow, continuous flow of the melting liquid against the dry, cracked pavement.
+      material: popsicles
+    - index: 67
+      id: 00009368
+      prompt: The video captures the slow, gravity-driven melting and viscous flow of a cut ice cream cone resting on a highly polished, dark reflective surface. The object is a conical wafer, brittle and rigid in its dry state, filled with a dense mixture of white ice cream, dark chocolate, and solid inclusions like pistachios and caramel chunks. Because the ice cream is a frozen emulsion of fat, water, and sugar, as ambient heat transfers into it, the crystalline ice structure breaks down, transitioning the solid into a thick, high-viscosity liquid. The process begins at the base where the cold treat meets the surface; a pale, creamy pool of melted ice cream seeps out from beneath the cone. As the video progresses, this pool expands radially outward in a smooth, glossy disc, spreading thinly across the reflective black glass. The cone itself remains largely upright and structurally intact, but its lower rim softens and blends into the growing puddle. The dark background and mirror-like surface create a sharp, symmetrical reflection of the melting cone, emphasizing the slow, fluid dynamics of the dessert as it loses its solid form and flows under its own weight.
+      material: ice cream cone
+    - index: 115
+      id: '00017724'
+      prompt: 'The video shows the thermal melting of solid wax beads: a small brass ladle with a pink plastic handle, set in the circular opening of a pink plastic warmer, holds a pile of pastel-colored wax pellets (white, mint green, and teal, some flower- and cylinder-shaped) that are being liquefied by a heat source below. Beneath the ladle, a glowing orange flame is visible through the slotted brass plate, radiating infrared heat and direct flame contact upward into the bottom of the ladle. Because the pellets are paraffin wax — a low-melting, soft crystalline solid — they do not char or splinter as wood would, but instead soften and flow: the lower layers first lose their shape, the distinct flower and cylinder forms slump and merge, and a glossy, semi-transparent pool of liquid wax forms around the still-solid upper pieces, with the white and green beads gradually dissolving into a smooth, shimmering melt. The brass ladle conducts the heat evenly to the wax, while the pink plastic handle stays cool enough to hold. The camera holds a steady, slightly elevated close-up on the ladle, capturing the slow, gradual transition from a heap of discrete solid beads to a unified liquid pool as the flame flickers beneath.'
+      material: wax beads
+    - index: 128
+      id: 00019628
+      prompt: 'The video captures the slow, passive melting of a small, irregular white solid resting on a polished, dark reflective countertop. The object is a lumpy, roughly spherical mass with a matte, slightly granular surface, consistent with a piece of solidified fat, wax, or ice. In the blurred background, a row of light-colored ceramic canisters with wooden lids provides a warm, domestic setting. The core physical process is the gradual phase change from solid to liquid, driven by ambient heat. Over the course of the clip, the mass visibly softens and deforms: its sharp upper ridges and peaks round out and slump inward, and the overall volume appears to compress slightly as the internal structure loses rigidity. Because the material is a soft solid with a relatively low melting point, it does not shatter or fracture but instead flows plastically under its own weight, the surface becoming smoother and more consolidated as the outer layers soften. A faint, darker wet patch begins to form at the base where the material makes contact with the cool, hard surface, indicating the onset of liquid pooling. The camera holds a static, low frontal angle in close-up, keeping the melting mass centered and its reflection clearly visible on the glossy counter, allowing the subtle, continuous change in shape to be the sole focus of the scene.'
+      material: white solid
+    - index: 141
+      id: '00021413'
+      prompt: The video captures the slow, gravity-driven melting of a chocolate-coated ice cream bar held horizontally on a flat wooden stick against a dark, uniform background. The central object is a rectangular, frozen dairy bar encased in a glossy, viscous layer of milk chocolate, with a rough, beaded texture of small solidified droplets along its top and bottom edges. As the ambient temperature exceeds the melting point of the fat and sugar matrix, the chocolate shell softens from a rigid solid into a high-viscosity fluid. Because the liquid chocolate possesses significant surface tension and cohesion, it does not simply run off in thin sheets; instead, it pools and stretches, forming thick, elongated drips that sag downward under the constant pull of gravity. The melt is uneven, revealing patches of the pale, creamy, porous ice cream core beneath where the coating has thinned, creating a mottled, two-tone appearance. Over the duration of the clip, the glossy sheen of the chocolate intensifies as the surface smooths out, while a prominent drip on the lower right side elongates, swells, and eventually detaches, falling away in a smooth, continuous strand. The camera remains static in a tight, eye-level close-up, isolating the bar to emphasize the subtle, fluid dynamics of the melting process and the textural contrast between the smooth, flowing chocolate and the rough, porous ice cream.
+      material: chocolate ice cream bar
+    - index: 148
+      id: '00023330'
+      prompt: 'The video shows a slow, heat-driven melting process: a small golden metal ladle, held by a pink plastic handle, rests on the perforated brass top of a pink plastic warmer, and inside the ladle sits a pile of small, pastel-colored flower-shaped and rectangular wax pellets in shades of lavender, mint, and pale blue. The core physical event is the thermal softening and liquefaction of these solid wax pieces. Because the pellets are made of paraffin wax, a soft crystalline solid with a low melting point, they do not burn or char like organic matter; instead, as heat from the warmer''s internal source conducts up through the brass plate and into the metal ladle, the wax''s molecular structure loosens and the solid pieces gradually lose their rigid shape. Over the course of the clip, the distinct flower and block forms soften at their edges, their surfaces becoming glossy and rounded as they begin to slump and merge into one another, the lower pieces sinking as a thin pool of liquid wax forms beneath them. The metal ladle, being a good thermal conductor, distributes the heat evenly across the wax bed, so the melting progresses uniformly from the bottom up rather than at a single hot spot. The surrounding scene is static: a clear plastic organizer of multicolored wax beads sits in the upper left, and a white fluffy surface fills the background. The camera holds a steady, slightly elevated close-up, keeping the ladle centered so the subtle transition from crisp, separate wax shapes to a softening, glistening mass is clearly visible.'
+      material: wax in a ladle
+    - index: 169
+      id: '00025760'
+      prompt: 'The video shows the thermal melting of a solid wax tablet: a small, pale-blue, square piece of solid paraffin or soy wax rests in a shallow brass spoon, which is cradled in the circular opening of a pink plastic wax-melting warmer. The warmer is a molded pink plastic base with a brass-gold top plate pierced by radial slots, sitting on a pale pink tray; beneath the plate a small heat source (a candle or electric element) radiates upward through the slots, glowing faintly orange. The spoon, a thin brass vessel with a long handle extending toward the camera, holds the wax cube. Because the wax is a low-melting-point organic solid, it absorbs the steady conductive and radiant heat from the brass spoon and the warmer''s plate, and its crystalline lattice breaks down gradually. Over the several seconds, the cube''s edges soften and round, the solid surface loses its sharp geometry, and the piece shrinks and slumps as it liquefies, eventually becoming a small pool of glossy, translucent blue liquid in the spoon, with a tiny remnant of solid center that continues to dissolve. In the blurred background, a clear multi-compartment organizer holds colorful wax pellets, and a white ceramic lamp stands to the right, establishing a craft setting. The camera holds a steady, slightly elevated close-up on the spoon, tracking the slow, smooth transition from rigid solid to fluid melt.'
+      material: paraffin tablet
+- name: Rigid body motion
+  slug: rigid_body_motion
+  n: 526
+  omni: '0.1226'
+  vjepa: '0.1199'
+  dmd2: '0.1395'
+  best: v_jepa
+  pbest: '0.62'
+  note: All three tied. The absolute distances are also the smallest of the five processes.
+  groups:
+  - title: ''
+    examples:
+    - index: 9
+      id: '00000415'
+      prompt: 'The video shows a small dark-colored toy car descending a gravity-driven sloped track, converting gravitational potential energy into kinetic energy as it travels. The track is a bright orange, smooth, flexible plastic rail that has been bent into a long, continuous serpentine path of connected vertical loops and sweeping curves. This path is supported by a long, straight wooden plank that acts as a rigid diagonal beam, propped up at a steep angle by a white interior door frame and secured to the rail with strips of white tape at regular intervals. The car, a compact, low-profile solid body, begins at the high, far end of the incline. Because the track is smooth plastic and the car is a rigid solid, friction and air resistance are low, allowing the car to accelerate steadily down the slope. It enters the first large loop, using its forward momentum to climb the inner curve against gravity, then exits at the bottom and continues down the next descending section. The car''s speed and trajectory are governed by the changing gradient of the track: it gains speed on the downslopes and must retain enough velocity at the bottom of each loop to carry it up the opposite side. The camera holds a static, low, side-on angle from floor level, capturing the full length of the track receding into the distance and the car''s rapid, continuous motion through the loops.'
+    - index: 40
+      id: 00001858
+      prompt: 'The video presents a top-down aerial tracking shot of uniform linear motion: a single white sedan travels at constant velocity along a straight, two-lane asphalt highway that bisects a flat rural landscape. The core physical process is steady translational movement, where the car''s engine supplies a forward driving force through its tires that exactly balances the opposing forces of rolling resistance and aerodynamic drag, resulting in zero net acceleration and a constant speed. The sedan is a rigid, low-drag body with a smooth white painted shell and dark glass roof; its compact mass and streamlined profile allow it to maintain a stable, level trajectory without visible pitch or roll. The road beneath is a smooth, dark gray bituminous surface marked with crisp white dashed lane dividers and a solid edge line, providing a high-friction, low-rolling-resistance plane that supports the vehicle''s steady glide. The surrounding terrain is a patchwork of dormant, leafless deciduous woodland and fields in autumnal browns, ochres, and muted greens, with long diagonal shadows cast across the ground by a low sun, indicating a clear, calm day with no wind to disturb the scene. Over the sequence, the camera pans laterally in sync with the car, keeping it centered as it progresses from the right side of the frame toward the left, eventually approaching a small painted road marking and a second, darker vehicle entering from the left edge. The motion is smooth and uninterrupted, with no braking, turning, or vibration, emphasizing the equilibrium of forces that sustains constant-velocity travel across the open countryside.'
+    - index: 50
+      id: 00002318
+      prompt: 'The video captures a gravity-driven descent: a small red die-cast toy car accelerates down a long, sloped orange plastic track resting on a beige carpet. The track is a rigid, smooth polymer channel with raised side rails, propped at a shallow angle so that the car''s weight, acting vertically, produces a net force along the incline. Because the car is a dense, solid metal body on small hard wheels, it rolls without slipping, converting gravitational potential energy into kinetic energy as it travels. The camera starts at the upper end of the ramp near a striped tent and a white toy boat, then follows the car at a low, close angle as it picks up speed. As the car reaches the flat lower end of the track, it leaves the guided channel and rolls out onto the soft, fibrous carpet. Here the transition in surface material changes the dynamics: the high rolling resistance and friction of the plush carpet fibers rapidly dissipate the car''s kinetic energy, so it decelerates and comes to a stop just beyond the track''s end, its momentum spent against the yielding pile. The final frames hold on the stationary red car resting on the carpet, the orange track trailing off behind it.'
+    - index: 130
+      id: '00006470'
+      prompt: The video depicts the mechanical grooming of a snow-covered slope at night, a process driven by the interaction between a heavy tracked vehicle and the granular, low-density solid of the snowpack. The central object is a snow groomer, a large tracked machine with a wide, toothed metal blade mounted to its front and a rotating tiller assembly at its rear. Because the snow is a cold, crystalline solid with internal friction, it does not flow like a liquid; instead, it resists shear and must be physically displaced and fractured. As the groomer advances slowly up the gentle incline, its front blade pushes laterally against the loose snow, compressing it and creating a low mound that is then scraped and leveled by the machine's tracks. The machine's headlights and a powerful external floodlight illuminate the scene, casting long shadows and highlighting the fine, powdery texture of the snow, which scatters the light. The camera maintains a static, wide, low-angle shot from the base of the slope, capturing the groomer's steady, deliberate progress as it transforms the uneven, tracked surface into a smoother, more uniform layer, with the dark forest and a "ZIP LINE START" sign framing the right side of the illuminated path.
+    - index: 241
+      id: 00012889
+      prompt: The video captures the continuous mechanical harvesting and compaction of cut forage in a field. A large, heavy-duty green agricultural tractor, equipped with massive, deeply treaded rubber tires for high-traction on soft ground, pulls a matching green Deutz-Fahr forage harvester. The core physical process is the ingestion and compaction of loose, dry plant material. The harvester is fitted with a wide, rotating front pickup reel made of curved metal tines. As the tractor advances, this reel spins, sweeping the long, brittle, low-density hay and grass from the ground and feeding it into the machine's intake. Because the raw forage is a chaotic tangle of stiff, dry stalks, it is highly compressible; inside the harvester, a hydraulic piston or ramming mechanism drives a heavy plate back and forth, exerting immense compressive force that collapses the air pockets between the stalks and packs the material into a dense, cylindrical bale. The continuous operation of the pickup and the internal compactor throws a persistent cloud of fine dust and airborne chaff into the air above the machine, a byproduct of the friction and crushing of the dry plant fibers. The camera maintains a steady, side-on tracking shot, moving parallel to the vehicles to keep the harvester centered, clearly showing the transformation of the loose ground cover into a compressed load as the tractor rolls forward over the field.
+---
+
+<style>
+#main, .page, .page__inner-wrap, .initial-content, .page-content {
+  max-width: 100% !important;
+}
+article.page { width: 100% !important; max-width: 100% !important; }
+.page { padding: 0 20px; }
+.quad-row {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 18px;
+  align-items: start;
+}
+.method-block { min-width: 0; }
+.method-title {
+  text-align: center;
+  font-weight: bold;
+  font-size: 0.95em;
+  margin-bottom: 8px;
+  padding: 4px 0;
+  background: #f2f2f2;
+  border-radius: 4px;
+}
+.method-title.gt-title { background: #e3efe3; }
+.quad-row video {
+  width: 100%;
+  aspect-ratio: 832 / 480;
+  height: auto;
+  display: block;
+  border-radius: 4px;
+  background: #000;
+}
+.proc-heading {
+  margin: 56px 0 4px;
+  padding-bottom: 8px;
+  border-bottom: 3px solid #333;
+}
+.group-heading { margin: 34px 0 4px; font-size: 1.05em; color: #333; }
+.example-label { font-weight: 600; margin: 24px 0 8px; }
+.example-label span { color: #888; font-weight: normal; }
+.material-tag {
+  display: inline-block; background: #ececec; color: #444;
+  border-radius: 3px; padding: 1px 8px; font-size: 0.78em;
+  font-weight: 600; margin-left: 8px; vertical-align: middle;
+}
+.ex-prompt { font-size: 0.86em; color: #666; margin: 0 0 10px; }
+.scoretable { border-collapse: collapse; font-size: 0.92em; margin: 10px 0 6px; }
+.scoretable th, .scoretable td { padding: 5px 12px; border-bottom: 1px solid #e5e5e5;
+  text-align: left; }
+.scoretable td.num, .scoretable th.num { text-align: right;
+  font-variant-numeric: tabular-nums; }
+.scoretable td.win { font-weight: 700; }
+.procnote { font-size: 0.88em; color: #666; margin: 4px 0 0; }
+@media (max-width: 900px) { .quad-row { grid-template-columns: 1fr 1fr; } }
+@media (max-width: 560px) { .quad-row { grid-template-columns: 1fr; } }
+</style>
+
+<p>Three methods scored against a <strong>human-free</strong> ground-truth set, across
+five physics processes. Four sources per row, left to right:
+<strong>omnistream</strong> alignment (<code>test_set_physics_&lt;proc&gt;</code>),
+<strong>v_jepa</strong> alignment on recaptioned data
+(<code>..._repa_v_jepa_recaption_Data</code>), <strong>DMD2</strong> only on the original
+training data (<code>..._only_dmd2_original_training_Data</code>), and the
+<strong>ground truth</strong>. All clips are 832&times;480, 16&nbsp;fps, 81 frames.</p>
+
+<p>MMD&sup2; is measured over <em>every</em> clip in each process (not the examples
+shown), using VideoMAEv2 ViT-B/16 embeddings with an unbiased degree-3 polynomial
+kernel. Lower is closer to real.</p>
+
+<table class="scoretable">
+  <thead><tr>
+    <th>process</th><th class="num">clips</th><th class="num">omnistream</th>
+    <th class="num">v_jepa</th><th class="num">DMD2</th><th>closest</th>
+    <th class="num">P(closest)</th>
+  </tr></thead>
+  <tbody>
+  {% for p in page.processes %}
+    <tr>
+      <td><a href="#{{ p.slug }}">{{ p.name }}</a></td>
+      <td class="num">{{ p.n }}</td>
+      <td class="num{% if p.best == 'omnistream' %} win{% endif %}">{{ p.omni }}</td>
+      <td class="num{% if p.best == 'v_jepa' %} win{% endif %}">{{ p.vjepa }}</td>
+      <td class="num{% if p.best == 'dmd2' %} win{% endif %}">{{ p.dmd2 }}</td>
+      <td>{{ p.best }}</td>
+      <td class="num">{{ p.pbest }}</td>
+    </tr>
+  {% endfor %}
+    <tr>
+      <td><strong>clip-weighted mean</strong></td><td class="num">1883</td>
+      <td class="num">0.2498</td><td class="num">0.2477</td><td class="num">0.3043</td>
+      <td>tie (omni / v_jepa)</td><td class="num">&mdash;</td>
+    </tr>
+  </tbody>
+</table>
+
+<p style="font-size:0.88em;color:#666;">Every one of the 15 method&times;process cells is
+decisively distinguishable from the real clips (permutation p&nbsp;&lt;&nbsp;0.0004,
+16&ndash;49&times; the null threshold), so none of these is close to indistinguishable
+from ground truth. <strong>DMD2 is clearly the weakest overall</strong> (clip-weighted
+0.3043). <strong>omnistream and v_jepa are a statistical tie overall</strong> &mdash;
+0.2498 vs 0.2477, pooled &Delta;&nbsp;=&nbsp;+0.0022 with a 95% CI of
+[&minus;0.0222,&nbsp;+0.0280] &mdash; and they split the five processes 3&ndash;2, so the
+per-process winners below should not be read as a general ranking. The examples in each
+section were picked by hand and are not a random sample.</p>
+
+{% for p in page.processes %}
+<h2 class="proc-heading" id="{{ p.slug }}">{{ p.name }}</h2>
+<table class="scoretable">
+  <thead><tr><th class="num">clips</th><th class="num">omnistream</th>
+    <th class="num">v_jepa</th><th class="num">DMD2</th><th>closest</th></tr></thead>
+  <tbody><tr>
+    <td class="num">{{ p.n }}</td>
+    <td class="num{% if p.best == 'omnistream' %} win{% endif %}">{{ p.omni }}</td>
+    <td class="num{% if p.best == 'v_jepa' %} win{% endif %}">{{ p.vjepa }}</td>
+    <td class="num{% if p.best == 'dmd2' %} win{% endif %}">{{ p.dmd2 }}</td>
+    <td>{{ p.best }} (P = {{ p.pbest }})</td>
+  </tr></tbody>
+</table>
+<p class="procnote">{{ p.note }}
+  Prompts: <a href="{{ site.baseurl }}/files/physics_methods_prompts_{{ p.slug }}.txt">physics_methods_prompts_{{ p.slug }}.txt</a></p>
+
+{% for g in p.groups %}
+{% if g.title != "" %}<h3 class="group-heading">{{ g.title }}</h3>{% endif %}
+{% for ex in g.examples %}
+<div class="example-label">{{ p.name }}{% if g.title != "" %} &middot; {{ g.title }}{% endif %} {{ forloop.index }}
+  <span>[#{{ ex.index }} &middot; clip {{ ex.id }}]</span>
+  {% if ex.material %}<span class="material-tag">{{ ex.material }}</span>{% endif %}
+</div>
+<p class="ex-prompt">{{ ex.prompt }}</p>
+<div class="quad-row">
+  <div class="method-block">
+    <div class="method-title">omnistream</div>
+    <video loop muted playsinline controls preload="none" class="lazy-video">
+      <source src="{{ site.baseurl }}/assets/videos/physics_methods/{{ p.slug }}/omni_{{ ex.index }}.mp4" type="video/mp4">
+    </video>
+  </div>
+  <div class="method-block">
+    <div class="method-title">v_jepa</div>
+    <video loop muted playsinline controls preload="none" class="lazy-video">
+      <source src="{{ site.baseurl }}/assets/videos/physics_methods/{{ p.slug }}/vjepa_{{ ex.index }}.mp4" type="video/mp4">
+    </video>
+  </div>
+  <div class="method-block">
+    <div class="method-title">DMD2</div>
+    <video loop muted playsinline controls preload="none" class="lazy-video">
+      <source src="{{ site.baseurl }}/assets/videos/physics_methods/{{ p.slug }}/dmd2_{{ ex.index }}.mp4" type="video/mp4">
+    </video>
+  </div>
+  <div class="method-block">
+    <div class="method-title gt-title">Ground truth</div>
+    <video loop muted playsinline controls preload="none" class="lazy-video">
+      <source src="{{ site.baseurl }}/assets/videos/physics_methods/{{ p.slug }}/gt_{{ ex.index }}.mp4" type="video/mp4">
+    </video>
+  </div>
+</div>
+{% endfor %}
+{% endfor %}
+{% endfor %}
+
+<script>
+// Every video above has a real <source> and preload="none", so controls work with
+// JavaScript off and nothing is fetched until play. This only plays clips on screen.
+(function () {
+  if (!('IntersectionObserver' in window)) return;
+  var io = new IntersectionObserver(function (entries) {
+    entries.forEach(function (e) {
+      if (e.isIntersecting) { e.target.play().catch(function () {}); }
+      else if (!e.target.paused) { e.target.pause(); }
+    });
+  }, { rootMargin: '200px 0px' });
+  document.querySelectorAll('video.lazy-video').forEach(function (v) { io.observe(v); });
+})();
+</script>

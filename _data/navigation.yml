@@ -23,14 +23,11 @@ main:
   # - title: "Blog Posts"
   #   url: /year-archive/
     
-  - title: "REPA Loss"
-    url: /repa-loss/
 
-  - title: "DMD2 vs V-JEPA"
-    url: /dmd2-vs-vjepa/
 
-  - title: "Melting: 3 methods"
-    url: /melting-methods/
+
+  - title: "Physics methods"
+    url: /physics-methods/
 
   - title: "CV"
     url: /cv/
