@@ -1,0 +1,19 @@
+.rh-results { max-width: 1100px; }
+.rh-results .rh-intro { font-size: 1.05em; }
+.rh-results h2 { margin-top: 2rem; }
+.rh-table-scroll { overflow-x: auto; margin: 1rem 0 1.5rem; }
+.rh-table-scroll table { width: 100%; border-collapse: collapse; min-width: 720px; }
+.rh-table-scroll th, .rh-table-scroll td { padding: .55rem .65rem; border: 1px solid #d8d8d8; text-align: left; vertical-align: top; }
+.rh-table-scroll thead th { background: #f6f6f6; }
+.rh-table-scroll tbody th { white-space: nowrap; }
+.rh-table-scroll small { overflow-wrap: anywhere; color: #666; }
+.rh-status { font-weight: 600; }
+.rh-success { color: #17613b; }
+.rh-failure { color: #9b2631; }
+.rh-unscored, .rh-muted { color: #666; }
+.rh-video-grid { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 1rem; }
+.rh-video-grid figure { margin: 0; }
+.rh-video-grid video { display: block; width: 100%; background: #111; }
+.rh-video-grid figcaption { padding: .45rem 0; }
+.rh-video-grid figcaption small { overflow-wrap: anywhere; color: #666; }
+@media (max-width: 700px) { .rh-video-grid { grid-template-columns: 1fr; } }
