@@ -12,7 +12,7 @@ site_theme               : "default"
 title                    : "CSYSpace"
 title_separator          : "-"
 name                     : &name "Siyi Chen"
-description              : &description "In coming Ph.D. of UMich"
+description              : &description "Ph.D. student at UMich"
 url                      : "https://csy2077.github.io" # the base hostname & protocol for your site e.g. "https://[your GitHub username].github.io" or if you already have some other page hosted on Github then use "https://[your GitHub username].github.io/[Your Repo Name]"
 baseurl                  : "/siyichen.github.io" # the subpath of your site, e.g. "/blog"
 repository               : "csy2077/siyichen.github.io"
@@ -25,11 +25,11 @@ author:
   avatar           : "myself.jpg"
   name             : "Siyi Chen"
   pronouns         : # example: "she/her"  
-  bio              : "Incoming Ph.D. student at ECE, University of Michigan"
+  bio              : "Ph.D. student at ECE, University of Michigan"
   location         : "Ann Arbor, MI"
   # employer         : "Red Brick University"
   # uri              : # URL
-  email            : "chensy20031101@gmail.com" 
+  email            : "siyiche@umich.edu" 
 
   # Academic websites
   academia         : # URL
@@ -78,12 +78,14 @@ author:
 
 # Publication Category - The following the list of publication categories and their headings
 publication_category:
-  books:
-    title: 'Books'
-  manuscripts:
-    title: 'Journal Articles'    
+  preprints:
+    title: 'Preprints'
   conferences:
     title: 'Conference Papers'
+  manuscripts:
+    title: 'Journal Articles'
+  books:
+    title: 'Books'
 
 # Site Settings
 teaser                   :  # filename of teaser fallback teaser image placed in /images/, .e.g. "500x300.png"

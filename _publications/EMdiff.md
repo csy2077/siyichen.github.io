@@ -1,14 +1,14 @@
 ---
 title: "Learning Diffusion Model from Noisy Measurement using Principled Expectation-Maximization Method"
 collection: publications
-category: manuscripts
+category: conferences
 permalink: /publication/EMdiff
-excerpt: 'This paper is about the number 1. The number 2 is left for future work.'
-date: 2024-10-15
-venue: 'ICASSP'
+excerpt: 'Learns diffusion models directly from noisy measurements with a principled expectation-maximization method.'
+date: 2025-01-15
+venue: 'ICASSP 2025'
 # slidesurl: 'http://academicpages.github.io/files/slides1.pdf'
 paperurl: 'https://arxiv.org/abs/2410.11241'
 # bibtexurl: 'http://academicpages.github.io/files/bibtex1.bib'
-citation: 'Weimin Bai, Weiheng Tang, Enze Ye, Siyi Chen, Wenzheng Chen, He Sun. (2024). &quot;Learning Diffusion Model from Noisy Measurement using Principled Expectation-Maximization Method.&quot; <i>ICASSP</i>. 2024.'
+citation: 'Weimin Bai, Weiheng Tang, Enze Ye, Siyi Chen, Wenzheng Chen, He Sun. (2025). &quot;Learning Diffusion Model from Noisy Measurement using Principled Expectation-Maximization Method.&quot; <i>ICASSP</i>. 2025.'
 ---
 
